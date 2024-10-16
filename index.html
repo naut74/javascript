@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Whast Can JavaScript Do?</h2><hr>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML="Hello World"'>Click me!</button>
+    <hr>
+
+
+    <p>JavaScript can change HTML attributes.</p>
+    <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+    <hr>
+
+    <p>alert</p>
+    <button type="button" onclick="showmessage1();">Click me!</button>
+    <hr>
+
+    <!-- Hiển thị kết quả sử dụng thẻ HTML: -->
+     <div id="messageDiv"></div>
+    <button type="button" onclick="showmessage2();">Click me!</button>
+    <br><hr>
+
+    <!-- Hiển thị kết quả sử dụng hàm document.write(): -->
+    <button type="button" onclick="showmessage3();">Click me!</button>
+    <br><hr>
+
+    <!-- Hiển thị kết quả sử dụng hàm console.log(): -->
+    <button type="button" onclick="showmessage4();">Click me!</button>
+
+
+    <script>
+        function showmessage1() {
+            alert('Hello!');
+        }
+
+        function showmessage2(){
+            document.getElementById('messageDiv').innerHTML = 'Hello!';
+        }
+        function showmessage3() {
+            document.write('Hello!');
+        }
+        function showmessage4() {
+            console.log('Hello!');
+        }
+    </script>
+
+
+
+</body>
+</html>
